@@ -7,7 +7,7 @@ let computerScore = 0;
 const playRound = () => {
   const currentPlayerChoice = getPlayerChoice();
   const currentComputerChoice = getComputerChoice();
-  const current_case = player_Choice + " " + computer_Choice;
+  const current_case = currentPlayerChoice + " " + currentComputerChoice;
 
   const cases = ["rock scissors", "scissors paper", "paper rock"];
 
