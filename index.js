@@ -5,7 +5,9 @@ let playerScore = 0;
 let computerScore = 0;
 
 const playRound = () => {
-  const current_case = playerChoice() + " " + computerChoice();
+  const player_Choice = playerChoice();
+  const computer_Choice = computerChoice();
+  const current_case = player_Choice + " " + computer_Choice;
 
   const cases = ["rock scissors", "scissors paper", "paper rock"];
 
@@ -16,6 +18,13 @@ const playRound = () => {
   ) {
     playerScore += 1;
     alert("You won");
+    return;
+  }
+
+  if (player_Choice === computer_Choice) {
+    playerScore += 0.5;
+    computerScore += 0.5;
+    alert("Tie");
     return;
   }
 
