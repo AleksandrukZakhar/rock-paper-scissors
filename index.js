@@ -1,6 +1,6 @@
 const items = ["rock", "paper", "scissors"];
-const playerChoice = () => prompt("Choose your weapon").toLowerCase();
-const computerChoice = () => items[Math.floor(Math.random() * 3)];
+const getPlayerChoice = () => prompt("Choose your weapon").toLowerCase();
+const getComputerChoice = () => items[Math.floor(Math.random() * 3)];
 let playerScore = 0;
 let computerScore = 0;
 
