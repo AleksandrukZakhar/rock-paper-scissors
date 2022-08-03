@@ -1,1 +1,121 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap);.header,footer{background-color:#000;justify-content:center}*{padding:0;margin:0;box-sizing:border-box;font-family:'Open Sans',sans-serif;font-weight:800;color:#fff}body{background-color:#54738c;overflow:hidden}.header{height:10vh;display:flex;align-items:center;z-index:1}.titles-container,.weapons-container{height:20vh;display:flex;text-align:center}main{height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:start}.titles-container{flex-direction:column;justify-content:center;align-items:center;width:100vw}.weapons-container{justify-content:space-between;align-items:center;width:60vw}.btn-container{display:flex;width:70vw;height:30vh;justify-content:space-between;align-items:center}.btn,footer{height:10vh}.btn{width:clamp(2rem,20vw,100px);border:0;border-radius:5%;background-color:hsla(60,100%,50%,.9)}.play-again,footer{position:absolute;width:100%;display:flex}.btn>h1{font-size:3rem}footer{bottom:0;align-items:center}.play-again{backdrop-filter:blur(5px);height:100vh;z-index:999;justify-content:center;align-items:center}.play-again-container{display:flex;flex-direction:column;justify-content:center;align-items:center;height:25vh;width:60vw;background-color:hsla(0,0%,0%,80%);border:0;border-radius:5%;text-align:center}.hidden{display:none}.show{display:flex}
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap);
+
+.header,
+footer {
+    background-color: #000;
+    justify-content: center
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #fff
+}
+
+body {
+    background-color: #54738c;
+    overflow: hidden
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    z-index: 1
+}
+
+.titles-container,
+.weapons-container {
+    height: 20vh;
+    display: flex;
+    text-align: center
+}
+
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start
+}
+
+.titles-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw
+}
+
+.weapons-container {
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw
+}
+
+.btn-container {
+    display: flex;
+    width: 70vw;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center
+}
+
+.btn,
+footer {
+    height: 10vh
+}
+
+.btn {
+    width: clamp(2rem, 20vw, 100px);
+    border: 0;
+    border-radius: 5%;
+    background-color: hsla(60, 100%, 50%, .9)
+}
+
+.play-again,
+footer {
+    position: absolute;
+    width: 100%;
+    display: flex
+}
+
+.btn>h1 {
+    font-size: 3rem
+}
+
+footer {
+    bottom: 0;
+    align-items: center
+}
+
+.play-again {
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    z-index: 999;
+    justify-content: center;
+    align-items: center
+}
+
+.play-again-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 60vw;
+    background-color: hsla(0, 0%, 0%, 80%);
+    border: 0;
+    border-radius: 5%;
+    text-align: center
+}
+
+.hidden {
+    display: none
+}
+
+.show {
+    display: flex
+}
