@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+body {
+    background-color: hsl(207, 25%, 44%);
+}
+
+.header {
+    background-color: hsl(0, 0%, 0%);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+}
+
+
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.titles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.weapons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 60vw;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    width: 70vw;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: clamp(2rem, 20vw, 100px);
+    height: 10vh;
+    border: 0;
+    border-radius: 5%;
+    background-color: hsla(60, 100%, 50%, 90%);
+}
+
+.btn > h1 {
+    font-size: 3rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(0, 0%, 0%);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
