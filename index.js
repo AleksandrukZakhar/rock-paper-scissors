@@ -3,6 +3,9 @@ const btn = document.querySelectorAll(".btn");
 const playerWeapon = document.querySelector(".player-weapon");
 const computerWeapon = document.querySelector(".computer-weapon");
 const ruleTitle = document.querySelector(".rule-title");
+const playAgainElement = document.querySelector(".play-again");
+const win = document.querySelector(".win");
+const countdownElement = document.querySelector(".countdown");
 let playerScore = 0;
 let computerScore = 0;
 
@@ -43,11 +46,32 @@ const playGame = (playerChoice, computerChoice) => {
   }
 };
 
+const playAgain = (text) => {
+  let count = 5;
+  playAgainElement.classList.replace("hidden", "show");
+  win.textContent = text;
+
+  const countdown = setInterval(() => {
+    if (count > 0) {
+      count -= 1;
+      countdownElement.textContent = `Game will restart in ${count}...`;
+    } else {
+      playAgainElement.classList.replace("show", "hidden");
+      count = 5;
+      clearInterval(countdown);
+    }
+  }, 1000);
+
+  playerScore = 0;
+  computerScore = 0;
+  updateRule("First player that gets 5 points wins");
+};
+
 const gameLoop = (playerChoice, computerChoice) => {
   if (playerScore >= 5 || computerScore >= 5) {
     playerScore > computerScore
-      ? updateRule(`You won with the score of ${playerScore}`)
-      : updateRule(`Computer won with the score of ${computerScore}`);
+      ? playAgain(`You won with the score of ${playerScore}`)
+      : playAgain(`Computer won with the score of ${computerScore}`);
   } else {
     playGame(playerChoice, computerChoice);
   }
