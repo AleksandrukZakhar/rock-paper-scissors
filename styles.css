@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
+    color: hsl(0, 0%, 100%);
 }
 body {
     background-color: hsl(207, 25%, 44%);
@@ -19,11 +20,6 @@ body {
     align-items: center;
     z-index: 1;
 }
-
-.title {
-    color: white;
-}
-
 
 main {
     height: 70vh;
@@ -52,6 +48,10 @@ main {
     text-align: center;
 }
 
+.player-weapon, .computer-weapon {
+    font-size: 3rem;
+}
+
 .btn-container {
     display: flex;
     width: 70vw;
@@ -65,7 +65,7 @@ main {
     height: 10vh;
     border: 0;
     border-radius: 5%;
-    background-color: hsla(60, 100%, 50%, 90%);
+    background-color: hsla(60, 100%, 50%, 0.9)
 }
 
 .btn > h1 {
@@ -81,7 +81,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 .play-again {
@@ -100,12 +99,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
-    width: 20vw;
+    height: 25vh;
+    width: 60vw;
     background-color: hsla(0, 0%, 0%, 80%);
-    color: white;
     border: 0;
-    border-radius: 5%;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .hidden {
